@@ -1,0 +1,44 @@
+[
+    {
+      "id": "633584dbe81de66de19b379e",
+      "picture": "https://st3.depositphotos.com/1018174/18067/i/600/depositphotos_180671874-stock-photo-portrait-of-a-young-athlete.jpg",
+      "taskName": "Jogging",
+      "timeRequired": 1
+    },
+    {
+      "id": "633584db8bffce4d5df44b98",
+      "picture": "https://media.istockphoto.com/photos/english-breakfast-picture-id641845826?k=20&m=641845826&s=612x612&w=0&h=OYjRyZx7DQB8V8PaeehTvV_BGTF9U15wvF48Q3lOuX4=",
+      "taskName": "Make Breakfast",
+      "timeRequired": 2
+    },
+    {
+      "id": "633584db040a0733052d0303",
+      "picture": "https://miro.medium.com/max/1400/1*xPN1TMIK_kHoVBcQLKErYA.jpeg",
+      "taskName": "Study Programming",
+      "timeRequired": 4
+    },
+    {
+      "id": "633584db194cb2728057ea96",
+      "picture": "https://ychef.files.bbci.co.uk/976x549/p072v7x0.jpg",
+      "taskName": "Practice Guitar",
+      "timeRequired": 2
+    },
+    {
+      "id": "633584db30cc4a6036fd2384",
+      "picture": "https://content.sintelly.com/articles/I4SSKjJYtx3FCj9WBrx1/content/the-rise-of-digital-art-0-@sintelly.jpeg",
+      "taskName": "Practice Digital Art",
+      "timeRequired": 1
+    },
+    {
+      "id": "633584db63826cf9b2be6cf1",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--gVvEhuWm--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d10yuqxe8zbpl060v2g3.jpg",
+      "taskName": "Do Programming/Design Projects",
+      "timeRequired": 3
+    },
+    {
+      "id": "633584db46097a0f0aeb3869",
+      "picture": "https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/afsxs3xawu4w0o62_1603716952.jpeg",
+      "taskName": "Play Valorant",
+      "timeRequired": 2
+    }
+]
