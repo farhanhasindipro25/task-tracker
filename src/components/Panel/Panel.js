@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Panel.css';
 
 const Panel = (props) => {
     const [breaks, setBreaks] = useState(0);
 
-    const handleAddBreak = (e) => {
+    const retrievedData = JSON.parse(localStorage.getItem('break-time'));
+    useEffect(()=>{
+        if(retrievedData){
+            setBreaks(retrievedData)
+        }
+    },[breaks, retrievedData]);
+
+    const handleAddBreak = (breaks) => {
         // console.log("clicked",e);
-        setBreaks(e);
+        setBreaks(breaks);
+        localStorage.setItem('break-time',JSON.stringify(breaks));
     }
 
     const {panel} = props;
@@ -33,20 +41,20 @@ const Panel = (props) => {
             <div className="break-section">
                 <h3>Add a Break</h3>
                 <div className='break-times'>
-                    <button>
-                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>1 </span> <small>h</small>
+                    <button onClick={(e)=>handleAddBreak(1)}>
+                        <span>1 </span> <small>h</small>
                     </button>
-                    <button>
-                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>2 </span> <small>h</small>
+                    <button onClick={(e)=>handleAddBreak(2)}>
+                        <span>2 </span> <small>h</small>
                     </button>
-                    <button>
-                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>3 </span> <small>h</small>
+                    <button onClick={(e)=>handleAddBreak(3)}>
+                        <span>3 </span> <small>h</small>
                     </button>
-                    <button>
-                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>4 </span> <small>h</small>
+                    <button onClick={(e)=>handleAddBreak(4)}>
+                        <span>4 </span> <small>h</small>
                     </button>
-                    <button>
-                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>5 </span> <small>h</small>
+                    <button onClick={(e)=>handleAddBreak(5)}>
+                        <span>5 </span> <small>h</small>
                     </button>
                 </div>
             </div>
