@@ -5,8 +5,22 @@
 }
 
 .tasks-container{
+    margin-left: 230px;
+    margin-right: 150px;
     margin-top: 150px;
+    margin-bottom: 150px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
+}
+
+.panel-container{
+    position: sticky;
+    top: 0;
+    width: 400px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-right: 130px;
+    background-color: #2f2e3d;
+    border-radius: 20px;
 }

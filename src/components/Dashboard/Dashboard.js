@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Panel from '../Panel/Panel';
 import Task from '../Task/Task';
 import './Dashboard.css';
 
 const Dashboard = () => {
     // Loading data within the dashboard. (The component where the data will be shown)
     const [tasks,setTasks] = useState([]);
+    const [panel, setPanel] = useState([]);
 
     useEffect(()=>{
         fetch('tasks.json')
@@ -13,7 +15,9 @@ const Dashboard = () => {
     },[]);
 
     const handleAssignTask = (task) => {
-        console.log("clicked",task);
+        // console.log("clicked",task);
+        const newPanel = [...panel,task];
+        setPanel(newPanel);
     }
 
     return (
@@ -29,7 +33,9 @@ const Dashboard = () => {
                 }
             </div>
             <div className="panel-container">
-                <h3>Panel</h3>
+                <Panel
+                panel={panel}
+                ></Panel>
             </div>
         </div>
     );

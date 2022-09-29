@@ -1,0 +1,53 @@
+.panel{
+    padding-top: 30px;
+    color: white;
+}
+.panel img{
+    width: 100%;
+}
+.panel .name{
+    text-align: center;
+}
+.personal-info{
+    margin: 0px 5px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.month{
+    text-align: center;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(58, 57, 77);
+    border-radius: 20px;
+}
+.info span{
+    font-size: 25px;
+}
+.break-section h3{
+    text-align: center;
+}
+.break-times{
+    background-color: rgb(58, 57, 77);
+    margin: 30px 35px;
+    display: flex;
+    padding: 10px 0px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+.break-times button{
+    width: 50px;
+    border: none;
+    height: 50px;
+    color: black;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.break-times button:hover{
+    color: white;
+    background-color: rgb(244, 55, 55);
+}
