@@ -12,6 +12,9 @@ const Dashboard = () => {
             .then(data => setTasks(data));
     },[]);
 
+    const handleAssignTask = (task) => {
+        console.log("clicked",task);
+    }
 
     return (
         <div className='dashboard-container'>
@@ -20,6 +23,7 @@ const Dashboard = () => {
                     tasks.map(task => <Task 
                     key={task.id}
                     task={task}
+                    handleAssignTask={handleAssignTask}
                     >
                     </Task>)
                 }

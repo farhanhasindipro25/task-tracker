@@ -2,7 +2,9 @@ import React from 'react';
 import './Task.css';
 
 const Task = (props) => {
-    const {picture, taskName, timeRequired} = props.task;
+    const {handleAssignTask,task} = props;
+    const {picture, taskName, timeRequired} = task;
+    
     return (
         <div className='task'>
             <img src={picture} alt=""/>
@@ -10,7 +12,7 @@ const Task = (props) => {
                 <p className='task-name'>{taskName}</p>
                 <p className='task-time'> Allocated Time: {timeRequired} Hours</p>
             </div>
-            <button className='btn-task-assign'>
+            <button onClick={() => handleAssignTask(props.task)} className='btn-task-assign'>
                 <p>Assign Task</p>
             </button>
         </div>

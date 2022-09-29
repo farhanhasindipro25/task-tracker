@@ -34,6 +34,7 @@
 .btn-task-assign{
     width: 80%;
     border-radius: 10px;
+    border: none;
     display: block;
     margin: auto;
     color: white;
