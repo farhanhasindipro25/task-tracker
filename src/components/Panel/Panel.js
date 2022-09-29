@@ -1,10 +1,14 @@
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 import React, { useEffect, useState } from 'react';
 import './Panel.css';
 
+// toast.configure();
 const Panel = (props) => {
     const [breaks, setBreaks] = useState(0);
 
     const retrievedData = JSON.parse(localStorage.getItem('break-time'));
+
     useEffect(()=>{
         if(retrievedData){
             setBreaks(retrievedData)
@@ -25,6 +29,9 @@ const Panel = (props) => {
         totalTaskAllocationTime = totalTaskAllocationTime + task.timeRequired;
     }
 
+    const finish = () => {
+        // toast('All your activities for today were successfully completed!');
+    }
     return (
         <div className='panel'>
             <h3 className='name'>
@@ -69,7 +76,7 @@ const Panel = (props) => {
                     <h5>{breaks} HOURS</h5>
                 </div>
                 <button className='finish-tasks'>
-                    Complete For Today
+                    Finish Tasks
                 </button>
             </div>
         </div>
