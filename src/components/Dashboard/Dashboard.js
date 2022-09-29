@@ -21,21 +21,26 @@ const Dashboard = () => {
     }
 
     return (
-        <div className='dashboard-container'>
-            <div className="tasks-container">
-                {
-                    tasks.map(task => <Task 
-                    key={task.id}
-                    task={task}
-                    handleAssignTask={handleAssignTask}
-                    >
-                    </Task>)
-                }
+        <div>
+            <div className='header'>
+                <h2>TASK TRACKER</h2>
             </div>
-            <div className="panel-container">
-                <Panel
-                panel={panel}
-                ></Panel>
+            <div className='dashboard-container'>
+                <div className="tasks-container">
+                    {
+                        tasks.map(task => <Task 
+                        key={task.id}
+                        task={task}
+                        handleAssignTask={handleAssignTask}
+                        >
+                        </Task>)
+                    }
+                </div>
+                <div className="panel-container">
+                    <Panel
+                    panel={panel}
+                    ></Panel>
+                </div>
             </div>
         </div>
     );

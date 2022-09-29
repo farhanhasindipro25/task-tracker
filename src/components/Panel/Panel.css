@@ -82,3 +82,9 @@
 .finish-tasks:hover{
     background-color: rgb(244, 55, 55);
 }
+
+@media only screen and (max-width:667px){
+    .finish-tasks{
+        margin-bottom: 40px;
+    }
+}
