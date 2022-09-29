@@ -7,6 +7,7 @@ const Task = (props) => {
         <div className='task'>
             <img src={picture} alt=""/>
             <p className='task-name'>{taskName}</p>
+            <p className='task-time'> Allocated Time: {timeRequired} Hours</p>
         </div>
     );
 };

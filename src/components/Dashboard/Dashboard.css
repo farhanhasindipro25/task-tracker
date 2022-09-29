@@ -1,6 +1,7 @@
 .dashboard-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    background-color: rgb(27, 26, 40);
 }
 
 .tasks-container{

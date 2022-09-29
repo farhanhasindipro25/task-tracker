@@ -1,17 +1,31 @@
 .task{
     width: 300px;
-    height: 500px;
-    
+    height: 350px;
+    background-color: rgb(16, 15, 26);
+    border-radius: 20px;
 }
 
 .task img{
+    border-radius: 20px;
     width: 286px;
     height: 156px;
+    margin: 7px;
 }
 
 .task-name{
-    font-size: 21px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
+    line-height: 25px;
+}
+
+.task-time{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 25px;
 }
