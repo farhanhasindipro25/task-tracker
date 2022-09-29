@@ -1,7 +1,15 @@
 import React from 'react';
 import './Panel.css';
 
-const Panel = ({panel}) => {
+const Panel = (props) => {
+    const {panel} = props;
+    console.log(panel);
+
+    let totalTaskAllocationTime = 0;
+    for(const task of panel){
+        totalTaskAllocationTime = totalTaskAllocationTime + task.timeRequired;
+    }
+
     return (
         <div className='panel'>
             <h3 className='name'>
@@ -39,7 +47,7 @@ const Panel = ({panel}) => {
                 <h3>Task Time Allocations</h3>
                 <div className='task-time-panel'>
                     <h5>Task Time</h5>
-                    <h5>{} HOURS</h5>
+                    <h5>{totalTaskAllocationTime} HOURS</h5>
                 </div>
                 <div className='break-time-panel'>
                     <h5>Break Time</h5>
