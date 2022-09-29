@@ -6,8 +6,13 @@ const Task = (props) => {
     return (
         <div className='task'>
             <img src={picture} alt=""/>
-            <p className='task-name'>{taskName}</p>
-            <p className='task-time'> Allocated Time: {timeRequired} Hours</p>
+            <div>
+                <p className='task-name'>{taskName}</p>
+                <p className='task-time'> Allocated Time: {timeRequired} Hours</p>
+            </div>
+            <button className='btn-task-assign'>
+                <p>Assign Task</p>
+            </button>
         </div>
     );
 };
