@@ -6,7 +6,7 @@ import './Dashboard.css';
 const Dashboard = () => {
     // Loading data within the dashboard. (The component where the data will be shown)
     const [tasks,setTasks] = useState([]);
-    const [panel, setPanel] = useState([]);
+    const [panel,setPanel] = useState([]);
 
     useEffect(()=>{
         fetch('tasks.json')

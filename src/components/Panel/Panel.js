@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Panel.css';
 
 const Panel = (props) => {
+    const [breaks, setBreaks] = useState(0);
+
+    const handleAddBreak = (e) => {
+        // console.log("clicked",e);
+        setBreaks(e);
+    }
+
     const {panel} = props;
-    console.log(panel);
+    // console.log(panel);
 
     let totalTaskAllocationTime = 0;
     for(const task of panel){
@@ -27,19 +34,19 @@ const Panel = (props) => {
                 <h3>Add a Break</h3>
                 <div className='break-times'>
                     <button>
-                        <p>1 <small>HR</small></p>
+                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>1 </span> <small>h</small>
                     </button>
                     <button>
-                        <p>2 <small>HRS</small></p>
+                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>2 </span> <small>h</small>
                     </button>
                     <button>
-                        <p>3 <small>HRS</small></p>
+                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>3 </span> <small>h</small>
                     </button>
                     <button>
-                        <p>4 <small>HRS</small></p>
+                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>4 </span> <small>h</small>
                     </button>
                     <button>
-                        <p>5 <small>HRS</small></p>
+                        <span onClick={(e)=>handleAddBreak(e.target.innerText)}>5 </span> <small>h</small>
                     </button>
                 </div>
             </div>
@@ -51,7 +58,7 @@ const Panel = (props) => {
                 </div>
                 <div className='break-time-panel'>
                     <h5>Break Time</h5>
-                    <h5>{} HOURS</h5>
+                    <h5>{breaks} HOURS</h5>
                 </div>
                 <button className='finish-tasks'>
                     Complete For Today

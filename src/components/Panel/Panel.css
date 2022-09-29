@@ -37,9 +37,12 @@
     justify-content: space-evenly;
 }
 .break-times button{
-    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     border: none;
-    height: 50px;
     color: black;
     font-weight: 600;
     border-radius: 50%;
