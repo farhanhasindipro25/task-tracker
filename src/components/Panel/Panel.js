@@ -35,6 +35,20 @@ const Panel = ({panel}) => {
                     </button>
                 </div>
             </div>
+            <div className="task-details-section">
+                <h3>Task Time Allocations</h3>
+                <div className='task-time-panel'>
+                    <h5>Task Time</h5>
+                    <h5>{} HOURS</h5>
+                </div>
+                <div className='break-time-panel'>
+                    <h5>Break Time</h5>
+                    <h5>{} HOURS</h5>
+                </div>
+                <button className='finish-tasks'>
+                    Complete For Today
+                </button>
+            </div>
         </div>
     );
 };
