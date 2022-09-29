@@ -1,10 +1,12 @@
 import React from 'react';
+import './Task.css';
 
 const Task = (props) => {
-    console.log(props);
+    const {picture, taskName, timeRequired} = props.task;
     return (
-        <div>
-            <h2>Task</h2>
+        <div className='task'>
+            <img src={picture} alt=""/>
+            <p className='task-name'>{taskName}</p>
         </div>
     );
 };
