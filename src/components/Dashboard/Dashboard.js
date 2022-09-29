@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Task from '../Task/Task';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -16,6 +17,13 @@ const Dashboard = () => {
         <div className='dashboard-container'>
             <div className="tasks-container">
                 <h3>Task Tracker</h3>
+                {
+                    tasks.map(task => <Task 
+                    key={task.id}
+                    task={task}
+                    >
+                    </Task>)
+                }
             </div>
             <div className="panel-container">
                 <h3>Panel</h3>
